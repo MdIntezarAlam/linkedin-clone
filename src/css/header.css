@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 15%;
+    justify-content: space-between;
+    height: 35px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.header_left {
+    display: flex;
+}
+
+.header_left img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.header__search input {
+    background: transparent;
+    border: 0px;
+    outline: 0;
+    min-width: 220px;
+}
+
+.header__search svg {
+    font-size: 20px;
+    color: black;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px;
+    font-size: 14px;
+    color: rgb(113, 112, 112);
+    cursor: pointer;
+    position: relative;
+}
+
+.header__option:first-child{
+    color: black;
+}
+.header__option:first-child::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    background-color: #333;
+    height: 1px;
+    bottom: -5px;
+}
+
+.header__option .MuiAvatar-circular {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
