@@ -17,7 +17,7 @@ const Headeroptions = ({ Icon, title, avatar }) => {
         <Avatar
           name={avatar}
           src={user.photoURL}
-          // onClick={(e) => firebase.getAuth().signOut()}
+          onClick={(e) => firebase.getAuth().signOut()}
         />
       )}
       <span>{title}</span>
